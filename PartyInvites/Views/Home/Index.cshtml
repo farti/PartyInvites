@@ -8,11 +8,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>Przyjęcie sylwestrowe</title>
+    <style>
+        .btn a {color: white; text-decoration: none }
+        body { background-color: #f1f1f1;}
+    </style>
 </head>
 <body>
-    <div> 
-        Yo man ( z widoku )
+    <div class="text-center"> 
+        
+        <h2>Zapraszam na wspaniałe przyjęcie !</h2>
+        <h3>Ty też zostałeś zaproszony</h3>
+        <div class="btn btn-success">
+            @Html.ActionLink("Wyślij RSVP","RsvpForm")
+        </div>
     </div>
 </body>
 </html>
